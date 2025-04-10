@@ -2,8 +2,8 @@ import random
 
 
 def main():
-    total = 0
     numbers = []
+    total = 0
     
     while total <= 100:
         num = random.randint(1, 10)
@@ -13,12 +13,12 @@ def main():
     total_excluding_last = total - numbers[-1]
 
     print(" ".join(map(str, numbers[:-1])))
-    print(f"The total sum is {total}")
+    print(f"The total sum is {total_excluding_last}")
 
     print(" ".join(map(str, numbers)))
     print(f"The total sum is {total}")
     
-    return numbers, total
+    return numbers, total_excluding_last
 
 
 if __name__ == '__main__':
