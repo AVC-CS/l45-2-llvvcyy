@@ -15,9 +15,8 @@ def main():
     print(" ".join(map(str, numbers[:-1])))
     print(f"The total sum is {total}")
 
-    print(f'The random values are {numbers}')
-    print(f'The total is {total}')
-
+    print(" ".join(map(str, numbers)))
+    print(f"The total sum is {total}")
     
     return numbers, total
 
