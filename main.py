@@ -12,6 +12,9 @@ def main():
     
     total_excluding_last = total - numbers[-1]
 
+    print(" ".join(map(str, numbers[:-1])))
+    print(f"The total sum is {total}")
+
     print(f'The random values are {numbers}')
     print(f'The total is {total}')
 
